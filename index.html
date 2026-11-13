@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpeakStudio — Neural Audiobook Studio for Android &amp; Windows</title>
+  <style>
+    :root { --bg: #08121c; --card: #0f1e2e; --accent: #38bdf8; --teal: #2dd4bf; --text: #f1f5f9; --muted: #94a3b8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    main { max-width: 820px; margin: 0 auto; padding: 48px 22px 64px; }
+    .badge { display: inline-block; padding: 4px 12px; border-radius: 999px; background: rgba(56,189,248,0.14); color: var(--accent); font-size: 13px; font-weight: 600; }
+    h1 { font-size: 2.3rem; margin: 14px 0 10px; letter-spacing: -0.02em; }
+    .card { background: var(--card); border: 1px solid rgba(148,163,184,0.16); border-radius: 16px; padding: 24px; margin-top: 24px; }
+    h2 { font-size: 1.25rem; margin-top: 0; color: var(--accent); }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid rgba(148,163,184,0.16); color: var(--muted); font-size: 14px; display: flex; gap: 20px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="badge">Android &amp; Windows 10/11</span>
+    <h1>SpeakStudio</h1>
+    <p style="color:var(--muted);font-size:1.1rem">
+      SpeakStudio converts plain-text (<code>.txt</code>) books and manuscripts into chaptered <code>.m4b</code> audiobooks with synchronized sentence transcripts across Android, Windows, and user-controlled GPU runtimes.
+    </p>
+
+    <div class="card">
+      <h2>Key Capabilities</h2>
+      <ul>
+        <li><strong>Multi-Engine Synthesis:</strong> Create chaptered M4B audiobooks with Pocket, Chatterbox, Qwen3, and VibeVoice neural speech engines.</li>
+        <li><strong>User-Owned Google Drive Workspace:</strong> Stores your manuscripts, reference voice clips, resume checkpoints, and finished audiobooks directly inside your own <code>MyDrive/SpeakStudio/</code> folder.</li>
+        <li><strong>Local &amp; Cloud Flexibility:</strong> Run completely offline on Windows PC hardware or connect to your own Kaggle / Google Colab GPU notebook sessions, with seamless chunk-level resume across devices.</li>
+        <li><strong>Synchronized Playback:</strong> Built-in M4B audiobook player with embedded BSJ1 sentence-level transcript highlighting.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>How Google Account Access Is Used</h2>
+      <p>
+        When you sign in with Google, SpeakStudio uses Google OAuth 2.0 solely to manage your personal <code>MyDrive/SpeakStudio/</code> audiobook workspace (books, narrator voice clips, checkpoints, and completed audiobooks) so your library stays synced between your Android phone, Windows PC, and personal cloud notebook runtime. SpeakStudio does not run external servers that collect, store, or sell your Google Drive data.
+      </p>
+      <p>
+        Review our <a href="./privacy.html">Privacy Policy</a> and <a href="./terms.html">Terms of Service</a> for full details.
+      </p>
+    </div>
+
+    <footer>
+      <span>&copy; 2026 SpeakStudio</span>
+      <a href="./privacy.html">Privacy Policy</a>
+      <a href="./terms.html">Terms of Service</a>
+      <a href="mailto:shamsaboubkr@gmail.com">Contact Support</a>
+    </footer>
+  </main>
+</body>
+</html>
